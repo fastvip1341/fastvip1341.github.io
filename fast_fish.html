@@ -55,7 +55,7 @@
   </style>
 </head>
 <body>
-  <div id="info">
+  <div id="info" onClick="open()">
     <img src="logo_80.svg" alt="">
   </div>
   <div class="footer">
@@ -69,6 +69,11 @@
     &nbsp;
     </br>
   </div>
+  <script>
+    function open(){
+      window.webkit.messageHandlers.NativeMethod.postMessage("ok");
+    }
+  </script>
   <script type="text/javascript" src="//js.users.51.la/19786645.js"></script>
 </body>
 </html>
