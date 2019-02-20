@@ -55,8 +55,10 @@
   </style>
 </head>
 <body>
-  <div id="info" onClick="open()">
-    <img src="logo_80.svg" alt="">
+  <div id="info">
+    <a href="javascript:window.webkit.messageHandlers.NativeMethod.postMessage("open")">
+      <img src="logo_80.svg" alt="">
+    </a>
   </div>
   <div class="footer">
     <div><img class="set step1" src="1.png" alt=""></div>
@@ -69,11 +71,6 @@
     &nbsp;
     </br>
   </div>
-  <script>
-    function open(){
-      window.webkit.messageHandlers.NativeMethod.postMessage("ok");
-    }
-  </script>
   <script type="text/javascript" src="//js.users.51.la/19786645.js"></script>
 </body>
 </html>
